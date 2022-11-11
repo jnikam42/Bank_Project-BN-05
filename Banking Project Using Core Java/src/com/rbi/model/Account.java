@@ -2,72 +2,54 @@ package com.rbi.model;
 
 public class Account 
 {
-	private String accountNumber;
-	private String customerName;
-	private String address;
-	private String mono;
-	private double money;
-	private String customerId;
-	private String password;
-	private String bankName;
-	private String IFSC;
-	
-	
-	public String getAccountNumber() {
-		return accountNumber;
+	private int CostumerId;
+	private String CostumerName;
+	private String PanNo;
+	private String MoNo;
+	private String Address;
+	private String Password;
+	private double Money;
+	public int getCostumerId() {
+		return CostumerId;
 	}
-	public void setAccountNumber(String accountNumber) {
-		this.accountNumber = accountNumber;
+	public void setCostumerId(int costumerId) {
+		CostumerId = costumerId;
 	}
-	public String getCustomerName() {
-		return customerName;
+	public String getCostumerName() {
+		return CostumerName;
 	}
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
+	public void setCostumerName(String costumerName) {
+		CostumerName = costumerName;
+	}
+	public String getPanNo() {
+		return PanNo;
+	}
+	public void setPanNo(String panNo) {
+		PanNo = panNo;
+	}
+	public String getMoNo() {
+		return MoNo;
+	}
+	public void setMoNo(String moNo) {
+		MoNo = moNo;
 	}
 	public String getAddress() {
-		return address;
+		return Address;
 	}
 	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getMono() {
-		return mono;
-	}
-	public void setMono(String mono) {
-		this.mono = mono;
-	}
-	public double getMoney() {
-		return money;
-	}
-	public void setMoney(double money) {
-		this.money = money;
-	}
-	public String getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
+		Address = address;
 	}
 	public String getPassword() {
-		return password;
+		return Password;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		Password = password;
 	}
-	public String getBankName() {
-		return bankName;
+	public double getMoney() {
+		return Money;
 	}
-	public void setBankName(String bankName) {
-		this.bankName = bankName;
-	}
-	public String getIFSC() {
-		return IFSC;
-	}
-	public void setIFSC(String iFSC) {
-		IFSC = iFSC;
+	public void setMoney(double money) {
+		Money = money;
 	}
 	
-	
-
 }

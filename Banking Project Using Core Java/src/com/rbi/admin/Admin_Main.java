@@ -4,31 +4,37 @@ import java.util.Scanner;
 
 import com.rbi.operation.Operation;
 
-public class Admin_Main {
-
+public class Admin_Main
+{
+	
 	public static void main(String[] args) {
 		
-		Scanner sc=new Scanner(System.in);
-		
 		Operation op=new Operation();
+		Scanner sc=new Scanner(System.in);
+		while(true)
+		{
+			
+         System.out.println("Select your Choice");
+         System.out.println("1.Create New Account.\n2.Show Account Details.");
+       int x=sc.nextInt();
+       
+       switch (x) 
+       {
+	     case 1: op.createAccount();
 		
-		       System.out.println("Enter Your Choice");
-		       System.out.println("1.CREATE ACCOUNT \n2.CHECK BALENCE");
-		       int x=sc.nextInt();
-		       
-		       switch(x)
-		       {
-		       case 1:op.createAccount();
-		    	   
-		    	   break;
-		       case 2:
-		    	   
-		    	   break;
-		    	   
-		    	   default :
-		    		   System.out.println("Please Enter Valied Option");
-		       }
+		 break;
+		
+	    case 2:op.showAccount();
+		   
+		break;
 
+	    default:
+		break;
+	   }
+	
+   
+   }
+	
+	
 	}
-
 }
