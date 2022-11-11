@@ -30,12 +30,14 @@ public class Operation {
 			System.out.println("Please Enter Minimum Deposite Amount Rs. 500 ");
 		}
 		
+	  }
+	
 	}
-		
-		
-		
-		
+	
+	public void ShowAccountDetails()
+	{
 		
 	}
+	
 
 }
